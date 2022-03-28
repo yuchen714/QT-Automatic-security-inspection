@@ -1,0 +1,54 @@
+﻿序号,漏洞名称,CVE编号,产品支持情况,漏洞修复缓解措施,修复优先级,,,,,,,,,,
+1,SaltStack 代码执行漏洞(CVE-2021-25283),CVE-2021-25283,漏洞检测,1.将 SaltStack 升级到 3000.8、3001.6、3002.5 及以上版本，下载地址：https://repo.saltstack.com/ 或者下载相应版本的修复补丁进行更新，下载地址：https://gitlab.com/saltstack/open/salt-patches,优先修复,,,,,,,,,,
+2,Apache Log4j 远程代码执行漏洞(CVE-2021-44228、CVE-2021-45046),CVE-2021-44228,漏洞检测,升级log4j,优先修复,,,,,,,,,,
+3,Linux polkit本地权限提升漏洞(CVE-2021-4034),CVE-2021-4034,漏洞检测,升级polkit,优先修复,,,,,,,,,,
+4,VMware vCenter Server 远程代码执行漏洞(CVE-2021-21972),CVE-2021-21972,漏洞检测,"1.将 VMware vCenter Server 升级到 6.5 U3n、6.7 U3l、7.0 U1c 及以上版本，下载地址：https://www.vmware.com/security/advisories/VMSA-2021-0002.html
+ 
+ 2.或者通过官方临时修复建议进行修复，更新地址：https://kb.vmware.com/s/article/82374",优先修复,,,,,,,,,,
+5,Oracle WebLogic Server远程代码执行漏洞(CVE-2021-2109),CVE-2021-2109,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpujan2021.html,优先修复,,,,,,,,,,
+6,Oracle WebLogic Server远程代码执行漏洞(CVE-2021-1994),CVE-2021-1994,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpujan2021.html,优先修复,,,,,,,,,,
+7,JumpServer 未授权远程代码执行漏洞,,漏洞检测,将 JumpServer 升级到 2.4.5、2.5.4、2.6.2及以上版本，下载地址：https://github.com/jumpserver/jumpserver,优先修复,,,,,,,,,,
+8,Apache Flink 未授权远程代码执行检查,,漏洞检测,为Flink配置登录认证，或者配置防火墙策略确保Flink接入安全，仅允许白名单IP进行访问,优先修复,,,,,,,,,,
+10,Apache Flink 文件读取漏洞(CVE-2020-17519),CVE-2020-17519,漏洞检测,将 Flink 升级到 1.11.3、1.12.0及以上版本，下载地址：https://flink.apache.org/downloads.html,优先修复,,,,,,,,,,
+11,Apache Unomi 远程代码执行漏洞(CVE-2020-13942),CVE-2020-13942,漏洞检测,将 Unomi 升级到 1.5.2 及以上版本，下载地址：http://unomi.incubator.apache.org/download.html,优先修复,,,,,,,,,,
+12,SaltStack 命令注入漏洞、逻辑漏洞和验证绕过漏洞(CVE-2020-16846、CVE-2020-17490、CVE-2020-25592),CVE-2020-16846、CVE-2020-17490、CVE-2020-25592,漏洞检测,"1.将 SaltStack 升级到 2019.2.7、3000.5、3001.3、3002.1 及以上版本，下载地址：https://repo.saltstack.com/
+ 
+ 2.或者下载相应版本的修复补丁进行更新，下载地址：https://gitlab.com/saltstack/open/salt-patches",优先修复,,,,,,,,,,
+13,【精确检测】Oracle WebLogic Server Console 认证绕过漏洞(CVE-2020-14750),CVE-2020-14750,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/alert-cve-2020-14750.html,优先修复,,,,,,,,,,
+14,Oracle WebLogic Server远程代码执行漏洞(CVE-2020-14882),CVE-2020-14882,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpuoct2020.html,优先修复,,,,,,,,,视情况修复,
+15,Apache Solr 文件上传漏洞(CVE-2020-13957),CVE-2020-13957,漏洞检测,"1.将 Solr 升级到 8.6.3 及以上版本，下载地址：http://lucene.apache.org/solr/downloads.html
+ 
+ 2.如果未使用ConfigSets API，请将系统属性""configset.upload.enabled""设置为""false""来禁用UPLOAD命令：https://lucene.apache.org/solr/guide/8_6/configsets-api.html
+ 
+ 3.使用身份验证/授权确保不允许未知请求：https://lucene.apache.org/solr/guide/8_6/authentication-and-authorization-plugins.html
+ 
+ 4.如果无法升级，请在SOLR-14663中应用补丁程序：https://issues.apache.org/jira/browse/SOLR-14663",优先修复,,,,,,,,,,
+16,Oracle WebLogic Server远程代码执行漏洞(CVE-2020-14645),CVE-2020-14645,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpujul2020.html,优先修复,,,,,,,,,,
+17,Atlassian Confluence 远程代码执行漏洞(CVE-2020-4027),CVE-2020-4027,漏洞检测,将 Confluence 升级到 7.4.4，7.5.1及以上版本，下载地址：https://www.atlassian.com/software/confluence/download,优先修复,,,,,,,,,,
+18,FastJSON＜=1.2.68 远程代码执行漏洞,,漏洞检测,"1.将 FastJSON 升级到 1.2.69 及以上版本，sec版本升级到 sec10 及以上版本，下载地址：https://repo1.maven.org/maven2/com/alibaba/fastjson/
+ 
+ 2.临时修复建议：开启了autoType功能的受影响用户可通过关闭autoType来规避风险，另建议将JDK升级到最新版本。
+ 
+  由于autotype开关的限制可被绕过，请受影响用户升级到FastJSON 1.2.68及以上版本，通过开启safeMode配置完全禁用autoType。三种配置SafeMode的方式如下:
+ 
+  1）在代码中配置： ParserConfig.getGlobalInstance().setSafeMode(true);
+ 
+  2）加上JVM启动参数： -Dfastjson.parser.safeMode=true （如果有多个包名前缀，可用逗号隔开）
+ 
+  3）通过类路径的fastjson.properties文件来配置： fastjson.parser.safeMode=true",优先修复,,,,,,,,,,
+19,Oracle WebLogic Server远程代码执行漏洞(CVE-2020-2883),CVE-2020-2883,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpuapr2020.html,优先修复,,,,,,,,,,
+20,Nexus Repository Manager 远程代码执行漏洞(CVE-2020-10199),CVE-2020-10199,漏洞检测,将 Nexus Repository Manager 升级到 3.21.2 及以上版本，下载地址：https://help.sonatype.com/repomanager3/download,优先修复,,,,,,,,,,
+21,Nexus Repository Manager 远程代码执行漏洞(CVE-2020-10204),CVE-2020-10204,漏洞检测,将 Nexus Repository Manager 升级到 3.21.2 及以上版本，下载地址：https://help.sonatype.com/repomanager3/download,优先修复,,,,,,,,,,
+23,Oracle WebLogic Server反序列化远程命令执行漏洞(CVE-2020-2551),CVE-2020-2551,漏洞检测,下载并安装WebLogic补丁，下载地址：https://support.oracle.com/rs?type=doc&id=2602410.1,优先修复,,,,,,,,,,
+24,Shiro RememberMe 1.2.4 反序列化过程命令执行漏洞(CVE-2016-4437),CVE-2016-4437,漏洞检测,将 Shiro 升级到 1.2.5、2.0.0 及以上版本，下载地址：http://shiro.apache.org/download.html,优先修复,,,,,,,,,,
+25,Oracle WebLogic Server远程代码执行漏洞(CVE-2021-2047),CVE-2021-2047,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpujan2021.html,优先修复,,,,,,,,,,
+26,Oracle WebLogic Server远程代码执行漏洞(CVE-2021-2064),CVE-2021-2064,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpujan2021.html,优先修复,,,,,,,,,,
+27,Oracle WebLogic Server远程代码执行漏洞(CVE-2021-2108),CVE-2021-2108,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpujan2021.html,优先修复,,,,,,,,,,
+28,Oracle WebLogic Server远程代码执行漏洞(CVE-2021-2075),CVE-2021-2075,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpujan2021.html,优先修复,,,,,,,,,,
+29,Oracle WebLogic Server远程代码执行漏洞(CVE-2020-14883),CVE-2020-14883,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpuoct2020.html,优先修复,,,,,,,,,,
+30,Oracle WebLogic Server远程代码执行漏洞(CVE-2020-14841),CVE-2020-14841,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpuoct2020.html,优先修复,,,,,,,,,,
+31,Oracle WebLogic Server远程代码执行漏洞(CVE-2020-14825),CVE-2020-14825,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpuoct2020.html,优先修复,,,,,,,,,,
+32,Oracle WebLogic Server远程代码执行漏洞(CVE-2020-14859),CVE-2020-14859,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpuoct2020.html,优先修复,,,,,,,,,web框架,
+33,Oracle WebLogic Server远程代码执行漏洞(CVE-2020-14820),CVE-2020-14820,漏洞检测,下载并安装WebLogic补丁，下载地址：https://www.oracle.com/security-alerts/cpuoct2020.html,优先修复,,,,,,,,,,
+34,Nacos 未授权访问漏洞,,漏洞检测,确保Nacos访问安全，仅允许白名单IP进行访问,优先修复,,,,,,,,,,
+35,Tomcat存在文件包含漏洞(CVE-2020-1938),CVE-2020-1938,漏洞检测,将 Tomcat 升级到 7.0.100、8.5.51、9.0.31 及以上版本，下载地址：http://archive.apache.org/dist/tomcat/,优先修复,,,,,,,,,,
